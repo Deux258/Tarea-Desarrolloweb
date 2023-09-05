@@ -1,0 +1,50 @@
+body{
+    min-height: 100vh;
+    flex: 1;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}    
+
+.navbar-brand{
+    display: flex;
+    min-height: 45px;
+    /* background-color: rgb(179, 179, 179); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.nav-item  {    padding: 3px;   }
+#button-right {
+    margin-right: 100px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+}.elementos-header:hover {
+    color: rgb(255, 255, 255);
+} 
+
+.logo-imagen {
+    height: 70px;
+    align-items: center;
+    margin-right: 10px;
+}
+#ImagenPrincipal {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+footer {
+     /*background-color: #333; Cambia el color de fondo según tus preferencias */
+    padding: 20px;
+    text-align: center;
+}
