@@ -1,50 +1,85 @@
-body{
-    min-height: 100vh;
-    flex: 1;
+/* Estilos para el contenedor principal */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
+/* Mueve los botones hacia la derecha */
+.nav-item {
+    margin-left: auto;
+}
 
+/* Estilos para los enlaces */
 a {
     text-decoration: none;
     color: black;
-}    
+}
+/* .elementos-header:hover {
+    color: rgb(255, 255, 255);
+}  */
+/* body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+} */
 
-.navbar-brand{
+/* Estilos para la barra de navegación */
+.navbar-brand {
     display: flex;
     min-height: 45px;
-    /* background-color: rgb(179, 179, 179); */
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin-left: 100px;
 }
 
-.nav-item  {    padding: 3px;   }
+/* Estilos para los botones */
+.nav-item {
+    padding: 3px;
+}
+
 #button-right {
     margin-right: 100px;
 }
 
-.logo{
+/* Estilos para el logo */
+.logo {
     display: flex;
     align-items: center;
     padding: 8px;
-
-}.elementos-header:hover {
-    color: rgb(255, 255, 255);
-} 
+}
 
 .logo-imagen {
     height: 70px;
     align-items: center;
     margin-right: 10px;
 }
+
+/* Estilos para la imagen principal */
 #ImagenPrincipal {
     padding-top: 50px;
     padding-bottom: 70px;
 }
 
+/* Estilos para el pie de página */
 footer {
-     /*background-color: #333; Cambia el color de fondo según tus preferencias */
-    padding: 20px;
+    align-self: flex-end;
+    width: 100%;
     text-align: center;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo {     margin-left: 20px;  }
+    .navbar-brand {
+        margin-left: 20px;
+    }
+    #button-right {
+        margin-right: 20px;
+    }
+
 }
