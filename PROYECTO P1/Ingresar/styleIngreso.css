@@ -1,3 +1,42 @@
-.modal-dialog {
-    padding-top: 55px;
+/* Estilos para el formulario de ingreso */
+.form-signin {
+    max-width: 400px; 
+    margin: auto;
+    text-align: center;
+    padding: 20px;
 }
+
+.form-signin img {
+    width: 72px; /* Cambia el ancho de la imagen según tus necesidades */
+    margin-bottom: 1rem;
+}
+
+.form-floating input[type="email"],
+.form-floating input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.form-check {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #712cf9; /* Color de fondo del botón */
+    border-color: #712cf9; /* Color del borde del botón */
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #6528e0; /* Cambia el color de fondo al pasar el ratón */
+    border-color: #6528e0; /* Cambia el color del borde al pasar el ratón */
+}
+#cancelar-button {
+    background-color: rgb(37, 37, 37); 
+    color: white; 
+    border-color: rgb(37, 37, 37);
+    margin-top: 5px;
+}
+
