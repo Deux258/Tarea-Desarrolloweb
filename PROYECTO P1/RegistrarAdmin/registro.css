@@ -1,4 +1,15 @@
 /* Estilos para el formulario de registro */
+body{
+background-color: #e5e5f7;
+/*opacity: 0.8;*/
+background-image: radial-gradient(circle at center center, #A7FF83, #086972), repeating-radial-gradient(circle at center center, #17B978, #17B978, 10px, transparent 20px, transparent 10px);
+/*background-blend-mode: multiply;*/
+
+}
+.card-body {
+    background-color: #e0ffd4;    
+    opacity: 100%;
+}
 
 .form-signin {
     max-width: 400px; /* Ajusta el ancho del formulario según tus necesidades */
@@ -25,19 +36,25 @@
 }
 
 .btn-primary {
-    background-color: #712cf9; /* Color de fondo del botón */
-    border-color: #712cf9; /* Color del borde del botón */
+    background-color:   #17B978; /* Color de fondo del botón */
+    border-color: #17B978; /* Color del borde del botón */
     font-weight: 600;
+    margin-top: 5px;
 }
 
 .btn-primary:hover {
-    background-color: #6528e0; /* Cambia el color de fondo al pasar el ratón */
-    border-color: #6528e0; /* Cambia el color del borde al pasar el ratón */
+    background-color:   #00663d; /* Cambia el color de fondo al pasar el ratón */
+    border-color:   #00663d; /* Cambia el color del borde al pasar el ratón */
 }
+.texto-enlace {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 #cancelar-button {
-    background-color: rgb(37, 37, 37); 
+    background-color: black; 
     color: white; 
-    border-color: rgb(37, 37, 37);
+    border-color: black;
     margin-top: 5px;
 }
 

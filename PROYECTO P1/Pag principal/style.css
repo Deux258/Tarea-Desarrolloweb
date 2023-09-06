@@ -1,3 +1,4 @@
+
 /* Estilos para el contenedor principal */
 .container-fluid {
     display: flex;
@@ -16,16 +17,6 @@ a {
     text-decoration: none;
     color: black;
 }
-/* .elementos-header:hover {
-    color: rgb(255, 255, 255);
-}  */
-/* body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
-} */
 
 /* Estilos para la barra de navegación */
 .navbar-brand {
@@ -52,6 +43,15 @@ a {
     align-items: center;
     padding: 8px;
 }
+.btn-primary {
+    background-color:   black; /* Cambia el color de fondo al pasar el ratón */
+    border-color:   black;
+  }
+.btn-primary:hover {
+    background-color:   #17B978; /* Cambia el color de fondo al pasar el ratón */
+    border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
+  }
+
 
 .logo-imagen {
     height: 70px;
@@ -64,6 +64,9 @@ a {
     padding-top: 50px;
     padding-bottom: 70px;
 }
+#crearvotacion {
+    text-align: center;
+}
 
 /* Estilos para el pie de página */
 footer {
@@ -71,6 +74,8 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {

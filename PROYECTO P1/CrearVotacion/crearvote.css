@@ -1,0 +1,33 @@
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom .75s ease-in-out;
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+  
+body{
+background-color: #00731d;
+opacity: 0.9;
+background-image: radial-gradient(circle at center center, #00cf56, #00731d), repeating-radial-gradient(circle at center center, #00cf56, #00cf56, 40px, transparent 80px, transparent 40px);
+background-blend-mode: multiply;
+}
+.nav-item {
+  margin-right: 5px;
+}
+
+.card-principal {
+  max-width: 1000px;
+  margin-top: 200px;
+  margin-inline: auto;
+  opacity: 1;
+}
+.btn-primary {
+  background-color:   black; /* Cambia el color de fondo al pasar el ratón */
+  border-color:   black;
+}
+
+.btn-primary:hover {
+  background-color:   #17B978; /* Cambia el color de fondo al pasar el ratón */
+  border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
+}

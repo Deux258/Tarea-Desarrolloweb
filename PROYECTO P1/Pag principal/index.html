@@ -28,7 +28,6 @@
                     <a class="btn btn-primary" href="../Ingresar/ingreso2.html">Ingresar Administrador</a>
                 </li>
                 <li class="nav-item">
-                    <!-- <button type="button" id="button-right" class="btn btn-secondary" href="../RegistrarAdmin/registrarAdmin.html">Registrar Administrador</button> -->
                     <a class="btn btn-secondary" href="../RegistrarAdmin/registrarAdmin.html">Registrar Administrador</a>
                 </li>
                 
@@ -40,7 +39,7 @@
 <div class="px-4 py-5 my-5 text-center"> <!-- Clase main texto -->
     <img class="d-block mx-auto mb-4" id="ImagenPrincipal"  src="../img/cda768fd-2cd9-4bab-920d-65671ece0557.jpg" width="180">
 
-    <h1 class="display-5 fw-bold text-body-emphasis" id="TextoPrincipal"   >Bienvenido a Flysheet</h1>
+    <h1 class="display-5 fw-bold text-body-emphasis" id="TextoPrincipal" >Bienvenido a Flysheet</h1>
 
     <div class="col-lg-6 mx-auto">
         <!-- Texto centrado del main -->
@@ -50,8 +49,9 @@
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ingresar a las Votaciones</button>
 
             <div class="btn-group me-2" role="group" aria-label="Second group">
-                <button type="button" class="btn btn-outline-primary"> Crear eleccion  </button>
-                <button type="button" class="btn btn-outline-primary"> <a href="../Votaciones/Votaciones.html" class="nav-link px-2 text-body-primary">Elecciones</a>   </button>
+                
+                <a class="btn btn-outline-primary" href="../CrearVotacion/crearVotacion.html" id="crearvotacion"  >Crear votación</a>
+                <button type="button" class="btn btn-outline-primary"> Elecciones   </button>
             </div>
       </div>
     </div>
@@ -77,21 +77,28 @@
     </footer>
 </div>
 
+<div class="square" data-mdb-toggle="animation" data-mdb-animation-start="onHover" data-mdb-animation="fade-in-down" data-mdb-animation-reset="true" style="animation-duration: 500ms;">
+    
+
+
+
+  </div>
 <div class="modal" id="mi-modal">   <!-- Acerca de -->
-    <div class="modal-dialog" role="document">  
-        <div class="modal-content rounded-4 shadow">
-        <div class="modal-header border-bottom-0">
-            <h1 class="modal-title fs-5">Acerca de</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-0">
-            <p>Proyecto creado por Diego Muñoz y Alex Marambio. Universidad Diego Portales. </p>
-        </div>
-        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-            <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
+        <div class="modal-dialog" role="document">  
+            <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5">Acerca de</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-0">
+                <p>Proyecto creado por Diego Muñoz y Alex Marambio. Universidad Diego Portales. </p>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
         </div>
     </div>
+    
 
     </div>
 </div>
