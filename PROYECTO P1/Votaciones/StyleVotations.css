@@ -1,21 +1,14 @@
+  .VotacionesSTYLE
+  {
+    background: rgb(167,255,131);
+    background: linear-gradient(0deg, #17b978b0 0%, rgb(255, 255, 255) 30%);
+    
+  }
 .Eligecaerte{
     color: black;
-    background-color: aquamarine;
+    background-color: #A7FF83;
     padding: 15pt;
     font-style:normal;
-}
-.tablee{
-    border-color: brown;
-    width: 1024px; height: 512px;
-    background-color: aqua;
-    
-}
-.cardd{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    background-color: red;
-    
 }
 .VotationSlide img
 {
