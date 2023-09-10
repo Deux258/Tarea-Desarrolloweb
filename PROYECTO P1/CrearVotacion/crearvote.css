@@ -1,33 +1,59 @@
-.modal-sheet .modal-dialog {
+/* .modal-sheet .modal-dialog {
   width: 380px;
   transition: bottom .75s ease-in-out;
 }
 .modal-sheet .modal-footer {
   padding-bottom: 2rem;
-}
-  
-body{
-background-color: #00731d;
-opacity: 0.9;
-background-image: radial-gradient(circle at center center, #00cf56, #00731d), repeating-radial-gradient(circle at center center, #00cf56, #00cf56, 40px, transparent 80px, transparent 40px);
-background-blend-mode: multiply;
-}
-.nav-item {
-  margin-right: 5px;
+} */
+.barranav {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo de la barra de navegación */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 
 .card-principal {
   max-width: 1000px;
-  margin-top: 200px;
-  margin-inline: auto;
-  opacity: 1;
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+} 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(to right, #5B22E8, #FF2362); */
+  background: linear-gradient(to right, #119e68, #00a8b4);
+  overflow: hidden;
+} 
 .btn-primary {
-  background-color:   black; /* Cambia el color de fondo al pasar el ratón */
+  background-color:   black; 
   border-color:   black;
 }
 
 .btn-primary:hover {
-  background-color:   #17B978; /* Cambia el color de fondo al pasar el ratón */
-  border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
+  background-color:   #17B978; 
+  border-color:   #17B978; 
+}
+
+.col-md-4 {
+  padding-bottom: 20px; /* Ajusta el valor según tu preferencia */
+  padding-right: 20px; /* Espacio adicional a la derecha del borde */
+}
+#img-fluid {
+  height: 100%;
+  width: auto;
 }
