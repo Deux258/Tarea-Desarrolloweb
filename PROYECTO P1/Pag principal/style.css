@@ -30,6 +30,11 @@ footer {
   color: white; /* Agrega esta línea para cambiar el color del texto a blanco */
 }
 
+.botonescentrales
+{
+  display: grid;
+  place-items: center;
+}
 
 body {
   margin: 0;
