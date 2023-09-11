@@ -115,6 +115,9 @@ footer {
     width: 100%;
     text-align: center;
 }
+.botones-lindos{
+
+}
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
