@@ -1,44 +1,78 @@
-/* .modal-sheet .modal-dialog {
-  width: 380px;
-  transition: bottom .75s ease-in-out;
+.navbar-brand {
+  display: flex;
+  height: 60px;
+  min-height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
 }
-.modal-sheet .modal-footer {
-  padding-bottom: 2rem;
-} */
-.barranav {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo de la barra de navegación */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
+.nav-item {
+  padding: 3px;
+}
+.logo-imagen {
+  height: 60px;
+  align-items: center;
+  margin-right: 10px;
 }
 
+#btn-navbar {
+  margin-right: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece el mínimo alto del cuerpo para ocupar toda la altura de la ventana. */
+  margin: 0;
+}
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #339982;
+  opacity: 0.7;
+  background-image: radial-gradient(#a7ff83 0.35000000000000003px, #339982 0.35000000000000003px);
+  background-size: 7px 7px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} 
 .card-principal {
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: auto; 
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 37%;
+  color: black;
 } 
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-.page-container {
-  position: relative;
   width: 100%;
   height: 100vh;
-  /* background: linear-gradient(to right, #5B22E8, #FF2362); */
-  background: linear-gradient(to right, #119e68, #00a8b4);
-  overflow: hidden;
-} 
+}
+.card-text {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+
+
+.footer {
+  background-color: #0e4166; /* Cambia el color de fondo del footer según tus preferencias. */
+  color: white; /* Cambia el color del texto del footer según tus preferencias. */
+  text-align: center;
+  padding: 10px; /* Añade espacio alrededor del contenido del footer. */
+  width: 100%;
+  height: 70px;
+}
+
 .btn-primary {
   background-color:   black; 
   border-color:   black;

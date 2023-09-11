@@ -1,13 +1,8 @@
 .navbar {
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.5074404761904762) 0%, rgba(0, 0, 0, 0.178) 100%);
 }
 
-/* #a7ff83
-#55ffdb
-#9a30b4
- */
-
+/* Estilos para el fondo animado */
 #animated-background {
   position: absolute;
   top: 0;
@@ -16,28 +11,41 @@
   height: 100%;
   box-sizing: border-box;
   display: block;
-  /* background-color: #0e4166;
-  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166); */
   background-color: #a7ff83;
   background-image: linear-gradient(to bottom, #55ffdab4, #9a30b4);
-
   z-index: -999;
+  
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Centra el fondo */
+  background-repeat: no-repeat; /* No se repite */
 }
+/* @media (min-width: 800px) and (max-width: 1000px) {
+  #animated-background {
+      
+  }
+} */
+
 footer {
   align-self: flex-end;
   width: 100%;
   text-align: center;
-  color: white; /* Agrega esta línea para cambiar el color del texto a blanco */
+  color: white;
 }
-
+#marcaagua {
+  color: white;
+}
 
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece un mínimo de altura de la ventana gráfica */
 }
-svg {
-  min-height: 100vh; 
+
+.wrapper {
+  flex-grow: 1; 
+  padding: 20px;
 }
 
 /* Estilos para el contenedor principal */
@@ -47,7 +55,7 @@ svg {
     color: white;
 }
 #TextoPrincipal{
-  color: white;
+  color: white !important;
 }
 .container-fluid {
     display: flex;
@@ -70,11 +78,15 @@ a {
 /* Estilos para la barra de navegación */
 .navbar-brand {
     display: flex;
-    min-height: 45px;
+    height: 60px;
+    min-height: 30px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin-left: 100px;
+}
+#btn-navbar {
+  margin-right: 100px;
 }
 
 /* Estilos para los botones */
@@ -97,9 +109,8 @@ a {
     border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
 }
 
-
 .logo-imagen {
-    height: 70px;
+    height: 60px;
     align-items: center;
     margin-right: 10px;
 }
@@ -119,6 +130,9 @@ footer {
     }
     #button-right {
         margin-right: 20px;
+    }
+    #btn-navbar {
+      margin-right: 20px;
     }
 
 }
