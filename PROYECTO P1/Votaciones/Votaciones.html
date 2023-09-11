@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 
-<body class="VotacionesSTYLE">
+<body class="VotacionesSTYLE" >
 <div class="Eligecaerte ">
   <a class="navbar-brand" href="../Pag principal/index.html"> <!-- Boton HOME -->
     <img src="../img/flysheetlogo.png" alt="Logo" width="60" style="display: inline;">
@@ -19,10 +19,10 @@
 </div>
 
 <div class="titulo">
-  <h1 style="margin-top: 60px; text-align:center;font-family:sans-serif;">
+  <h1 class="display-5 fw-bold text-body-emphasis" style="margin-top: 60px; text-align:center;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     Escoge una "Sopa" en la que quieras participar
   </h1>
-  <h5  style="margin-top: 50px; margin-bottom: 85px;font-family:sans-serif;color: rgb(107, 103, 98);width: 1200px; text-align: center;">
+  <h5  style="margin-top: 5px; margin-bottom: 40px;font-family:sans-serif;color: #696969;width: 900px; text-align: center;">
   En FlySheet disponemos de distintas "Sopas" en las cuales nuestras "moscas" pueden caer para participar 
   en la votación que se esté llevando acabo, y así ser parte de las deciciones que se tomen en el programa "Gran Primo".
   </h5>
@@ -32,7 +32,7 @@
 <!--CONTAINER SLIDESHOW VOTACIONES-->
 
 <div class=" container titulo">
-  <div id="carouselExampleCaptions" class="carousel slide" style="width: 1200px;height: auto;">
+  <div id="carouselExampleCaptions" class="carousel slide" style="width: 700px;height: auto;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -128,16 +128,32 @@
 <div class="modal" tabindex="-1" id="votacion1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+      <div class="modal-header" style="background-color: #d6d6d6b4;">
+        <h5 class="modal-title">Eliminación "Gran Primo"</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>Elige a quien le quieres otorgar tu voto, recuerda que es muy valioso y no se la puedes dar a cualquier mi$#@%</p>
+
+        <div class="accordion">
+
+          <input type="radio" name="toggle" class="accordion-toggle" />
+          <div class="accordion-header">Más Detalles</div>
+          <div class="accordion-content">
+            <h6>alonso   <strong>15%</strong></h6>
+            <h6>bastian   <strong>15%</strong></h6>
+            <h6>cesarito   <strong>15%</strong></h6>
+            <h6>doncontroles   <strong>15%</strong></h6>
+            <h6>esteban   <strong>40%</strong></h6>
+            <h5>Estado: Finalizado</h5>
+          </div>
+  
+          </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn" style="background-color: #a7ff83;" >Confirmar</button>
       </div>
     </div>
   </div>
@@ -147,16 +163,45 @@
 <div class="modal" tabindex="-1" id="votacion2">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+      <div class="modal-header" style="background-color: #d6d6d6b4;">
+        <h5 class="modal-title">Eliminación "Gran Primo"</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>Elige a quien le quieres otorgar tu voto, recuerda que es muy valioso y no se la puedes dar a cualquier mi$#@%</p>
+
+        <div class="accordion">
+          <input type="radio" name="toggle" class="accordion-toggle" checked />
+          <div class="accordion-header">Elección</div>
+          <div class="accordion-content">
+            <select>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+              <option>E</option>
+            </select>
+    
+          </div>
+  
+  
+          <input type="radio" name="toggle" class="accordion-toggle" />
+          <div class="accordion-header">Más Detalles</div>
+          <div class="accordion-content">
+            <h6>alonso   <strong>15%</strong></h6>
+            <h6>bastian   <strong>15%</strong></h6>
+            <h6>cesarito   <strong>15%</strong></h6>
+            <h6>doncontroles   <strong>15%</strong></h6>
+            <h6>esteban   <strong>40%</strong></h6>
+            <h5>Estado: En curso</h5>
+          </div>
+  
+          </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn" style="background-color: #a7ff83;" >Confirmar</button>
       </div>
     </div>
   </div>
@@ -166,16 +211,32 @@
 <div class="modal" tabindex="-1" id="votacion3">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+      <div class="modal-header" style="background-color: #d6d6d6b4;">
+        <h5 class="modal-title">Eliminación "Gran Primo"</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>Elige a quien le quieres otorgar tu voto, recuerda que es muy valioso y no se la puedes dar a cualquier mi$#@%</p>
+
+        <div class="accordion">
+
+          <input type="radio" name="toggle" class="accordion-toggle" />
+          <div class="accordion-header">Más Detalles</div>
+          <div class="accordion-content">
+            <h6>alonso   <strong>15%</strong></h6>
+            <h6>bastian   <strong>15%</strong></h6>
+            <h6>cesarito   <strong>15%</strong></h6>
+            <h6>doncontroles   <strong>15%</strong></h6>
+            <h6>esteban   <strong>40%</strong></h6>
+            <h5>Estado: Finalizado</h5>
+          </div>
+  
+          </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn" style="background-color: #a7ff83;" >Confirmar</button>
       </div>
     </div>
   </div>
@@ -185,16 +246,43 @@
 <div class="modal" tabindex="-1" id="votacion4">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+      <div class="modal-header" style="background-color: #d6d6d6b4;">
+        <h5 class="modal-title">Eliminación "Gran Primo"</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>Elige a quien le quieres otorgar tu voto, recuerda que es muy valioso y no se la puedes dar a cualquier mi$#@%</p>
+
+        <div class="accordion">
+          <input type="radio" name="toggle" class="accordion-toggle" checked />
+          <div class="accordion-header">Elección</div>
+          <div class="accordion-content">
+            <select>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+              <option>E</option>
+            </select>
+          </div>
+          
+          <input type="radio" name="toggle" class="accordion-toggle" />
+          <div class="accordion-header">Más Detalles</div>
+          <div class="accordion-content">
+            <h6>alonso   <strong>15%</strong></h6>
+            <h6>bastian   <strong>15%</strong></h6>
+            <h6>cesarito   <strong>15%</strong></h6>
+            <h6>doncontroles   <strong>15%</strong></h6>
+            <h6>esteban   <strong>40%</strong></h6>
+            <h5>Estado: En Curso</h5>
+          </div>
+  
+          </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn" style="background-color: #a7ff83;" >Confirmar</button>
       </div>
     </div>
   </div>

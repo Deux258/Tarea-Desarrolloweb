@@ -19,11 +19,6 @@
   background-position: center; /* Centra el fondo */
   background-repeat: no-repeat; /* No se repite */
 }
-/* @media (min-width: 800px) and (max-width: 1000px) {
-  #animated-background {
-      
-  }
-} */
 
 footer {
   align-self: flex-end;
@@ -89,7 +84,6 @@ a {
   margin-right: 100px;
 }
 
-/* Estilos para los botones */
 .nav-item {
     padding: 3px;
 }
@@ -101,12 +95,12 @@ a {
     padding: 8px;
 }
 .btn-primary {
-    background-color:   black; /* Cambia el color de fondo al pasar el ratón */
+    background-color:   black;
     border-color:   black;
 }
 .btn-primary:hover {
-    background-color:   #17B978; /* Cambia el color de fondo al pasar el ratón */
-    border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
+    background-color:   #17B978; 
+    border-color:   #17B978; 
 }
 
 .logo-imagen {
