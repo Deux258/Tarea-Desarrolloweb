@@ -1,6 +1,7 @@
 
  .VotacionesSTYLE
   {
+    padding-top: 100px;
     background: #a7ff83;
     background: linear-gradient(0deg, #9a30b4  0%, #55ffdab4 50%,#a7ff83 100%);
   }
