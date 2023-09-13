@@ -2,7 +2,12 @@
 {
     display: grid;
     place-items: center;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(255, 255, 255, 0.527);
     margin-left: 10%;
     margin-right: 10%;
+}
+.titulo
+{
+  display: grid;
+  place-items: center;
 }

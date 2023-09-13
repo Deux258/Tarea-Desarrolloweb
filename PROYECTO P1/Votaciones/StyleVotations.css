@@ -82,7 +82,7 @@
   /*Bloque para el título*/
   .accordion-header{
     background-color: #ffffff;
-    color: #7f8787;
+    color: #000000;
     position: relative;
     margin-top: -3em;
     padding-left: 10px
@@ -92,7 +92,7 @@
   .accordion-content {
     box-sizing: border-box;
     background-color: #f7f7f7;
-    color: #7f8787;
+    color: #4f5252;
     overflow: auto;
     position: relative;
     width: 100%;
