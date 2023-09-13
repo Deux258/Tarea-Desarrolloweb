@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body style="background-image: url('../img/SoupTextureNoticias.jpg');">
+<body>
 
 
     <header class="header-pag" > <!-- HEADER -->
@@ -36,8 +36,8 @@
     <container class="noticiasStyle">
 
       <div class="titulo" style="margin-top: 100px;">
-        <h1 class="display-5 fw-bold text-body-emphasis" style=" margin-top: 60px; text-align:center;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-          "Sopa" de noticias
+        <h1 class="display-5 fw-bold text-body-emphasis" style=" margin-top: 20px; text-align:center;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          Sopa de noticias "Gran Primo"
         </h1>
         <h5  style="margin-top: 5px; margin-bottom: 40px;font-family:sans-serif;color: #5e5e5e;width: 900px; text-align: center;">
         A pedido del público en esta pagina les traeremos las buenas nueva que tenga el reality "Gran Primo", actualizaremos con contenido exclusivo y fresco de ultimo momento, para no dejar 
@@ -45,7 +45,7 @@
         </h5>
       </div>
 
-    <div class="card" style="width: 18rem;margin-left: 47%;margin-top: 70px;">
+    <div class="card" style="width: 18rem;margin-left: 47%;margin-top: 30px;">
         <img src="../Noticias img/324696447_213964744414094_3959634151887905582_n.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Marcianeke en Gran Primo</h5>
@@ -83,7 +83,28 @@
 
     </container>
 
-
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="animated-background"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1600 900" class="position-fixed">
+    <defs>
+        <linearGradient id="bg">
+            <stop offset="0%" style="stop-color: rgba(201, 130, 249, 0.06)"></stop>
+            <stop offset="50%" style="stop-color: rgba(83, 191, 253, 0.6)"></stop>
+            <stop offset="100%" style="stop-color: rgba(130, 230, 84, 0.2)"></stop>
+        </linearGradient>
+        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0 s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    </defs>
+    <g>
+        <use xlink:href="#wave" opacity="0.3">
+            <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+        </use>
+        <use xlink:href="#wave" opacity="0.6">
+            <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+        </use>
+        <use xlink:href="#wave" opacity="0.9">
+            <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+        </use>
+    </g>
+</svg>
 
 </body>
 
