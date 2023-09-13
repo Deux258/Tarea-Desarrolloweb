@@ -2,7 +2,7 @@
 {
     display: grid;
     place-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.527);
     margin-left: 10%;
     margin-right: 10%;
 }
