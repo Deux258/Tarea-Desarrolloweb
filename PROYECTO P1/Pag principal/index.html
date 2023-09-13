@@ -7,21 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="ruta/a/popper.min.js"></script>
 
 </head>
 <body>
 <div class="Content">   <!-- DIV PRINCIPAL-->
 
-    <header class="header-pag" > <!-- HEADER -->
+    <header class="header-pag"> <!-- HEADER -->
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/flysheetlogo.png"  width="60" class="d-inline-block align-text-top">
-                    <h3> FlySheet   </h3>
+                <a class="navbar-brand" id="flysheet-link" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="¡Ya estás en FlySheet!">
+                    <img src="../img/flysheetlogo.png" width="60" class="d-inline-block align-text-top">
+                    <h3> FlySheet </h3>
                 </a>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="btn btn-primary"  href="../Ingresar/ingreso2.html">Ingresar Administrador</a>
+                        <a class="btn btn-primary" href="../Ingresar/ingreso2.html">Ingresar Administrador</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-secondary" id="btn-navbar" href="../RegistrarAdmin/registrarAdmin.html">Registrar Administrador</a>
@@ -30,6 +31,25 @@
             </div>
         </nav>
     </header>
+    <script>
+        var popoverElement = document.getElementById("flysheet-link");
+    
+        // Inicializa el popover utilizando el atributo de datos de Bootstrap
+        var popover = new bootstrap.Popover(popoverElement);
+    
+        // Agrega un controlador de evento para el evento 'shown.bs.popover'
+        popoverElement.addEventListener("shown.bs.popover", function () {
+            // Cuando se muestra el popover, agrega la clase personalizada
+            popoverElement.nextElementSibling.classList.add("fade-in-expand");
+        });
+    
+        // Agrega un controlador de clic para evitar que el enlace siga el enlace
+        popoverElement.addEventListener("click", function (e) {
+            e.preventDefault();
+        });
+    </script>
+    
+
 
 <!-- CONTENEDOR PRINCIPAL -->
     <div class="px-4 py-5 my-5 text-center card-principal">
@@ -81,15 +101,16 @@
 
 
     <!-- FOOTER PRINCIPAl -->
-    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
-        <p id="marcaagua" class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Flysheet, Inc</p>
-        <ul class="nav col-md-4 justify-content-end">
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <p id="marcaagua" class="col-md-4 col-sm-12 mb-0 text-start text-body-secondary">&copy; 2023 Flysheet, Inc</p>
+        <ul class="nav col-md-4 col-sm-12 justify-content-end">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Elecciones</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Ingresar Votaciones</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" data-bs-toggle="modal" data-bs-target="#mi-modal">Acerca de</a></li>
         </ul>
     </footer>
+      
     
     <div class="modal" id="mi-modal">
         <div class="modal-dialog" role="document">

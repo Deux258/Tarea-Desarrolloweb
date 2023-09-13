@@ -30,6 +30,42 @@ footer {
   color: white;
 }
 
+#ImagenPrincipal {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.4s ease-in-out; /* Agrega una transición suave */
+}
+
+#ImagenPrincipal:hover {
+  animation: shadow-drop-center 0.4s linear both;
+}
+
+/* Define la animación (puedes mantener tu código de animación existente aquí) */
+@keyframes shadow-drop-center {
+  0% {
+      box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.55);
+  }
+}
+/* Animacion popover */
+.popover.fade-in-expand {
+  animation: blur-in-expand 0.4s linear both;
+}
+
+@keyframes blur-in-expand {
+  0% {
+      transform: scale(0);
+      filter: blur(12px);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -98,6 +134,7 @@ a {
     background-color:   black;
     border-color:   black;
 }
+
 .btn-primary:hover {
     background-color:   #17B978; 
     border-color:   #17B978; 
@@ -107,16 +144,6 @@ a {
     height: 60px;
     align-items: center;
     margin-right: 10px;
-}
-
-/* Estilos para el pie de página */
-footer {
-    align-self: flex-end;
-    width: 100%;
-    text-align: center;
-}
-.botones-lindos{
-
 }
 
 /* Media Query para pantallas más pequeñas */
@@ -131,8 +158,31 @@ footer {
     #btn-navbar {
       margin-right: 20px;
     }
+    footer {
+      flex-direction: column;
+      text-align: center;
+  }
+    #marcaagua {
+      margin-bottom: 10px; /* Espacio entre el texto y la lista en pantallas pequeñas */
+  }
 
 }
+
+@media (min-width: 768px) {
+  footer {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #marcaagua {
+      text-align: left;
+  }
+
+  ul.nav {
+      justify-content: flex-end;
+  }
+}
+
 
 /* ANIMACION DE CARD */
 
