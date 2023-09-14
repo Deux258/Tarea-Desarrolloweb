@@ -9,6 +9,7 @@ body{
     .card-body {
         background-color: #e0ffd4;    
         opacity: 100%;
+        margin-top: 25%;
     }
     
     .form-signin {
@@ -41,14 +42,22 @@ body{
         font-weight: 600;
         margin-top: 5px;
     }
-    
     .btn-primary:hover {
-        background-color:   #17B978; /* Cambia el color de fondo al pasar el ratón */
-        border-color:   #17B978; /* Cambia el color del borde al pasar el ratón */
+        background-color:   #00663d; /* Cambia el color de fondo al pasar el ratón */
+        border-color:   #00663d; /* Cambia el color del borde al pasar el ratón */
     }
     #cancelar-button {
         background-color: black; 
         color: white; 
         border-color: black;
         margin-top: 5px;
+    }
+    footer {
+        position: fixed; 
+        left: 0;
+        bottom: 0; 
+        width: 100%; 
+        background-color: #fff; 
+        text-align: center; 
+        padding: 10px;
     }
