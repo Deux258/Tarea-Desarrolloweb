@@ -43,18 +43,6 @@
     place-items: center;
   }
 
-  .btn-primary {
-    background-color:   black;
-    border-color:   black;
-}
-
-.btn-primary:hover {
-    background-color:   #17B978; 
-    border-color:   #17B978; 
-}
-
-
-
   
   /*acordeon*/
 

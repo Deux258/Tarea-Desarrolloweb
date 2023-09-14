@@ -23,3 +23,19 @@
   background-image: linear-gradient(to bottom, #cf55ffb4, #e79426);
   z-index: -999;
 }
+.navbar-brand {
+  display: flex;
+  height: 60px;
+  min-height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left: 100px;
+}
+#btn-navbar {
+  margin-right: 100px;
+}
+
+.nav-item {
+    padding: 3px;
+}
