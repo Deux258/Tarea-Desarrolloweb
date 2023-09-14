@@ -49,7 +49,6 @@
   border-color:   #17B978; 
 }
 
-
 .tarjetas
 {
   width: 800px;
@@ -67,4 +66,7 @@
   padding: 0;
   border: 0;
   justify-content:left;
+}
+.joako{
+  margin-bottom: 100px;
 }

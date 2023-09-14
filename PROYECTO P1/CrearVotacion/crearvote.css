@@ -23,8 +23,6 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Establece el mínimo alto del cuerpo para ocupar toda la altura de la ventana. */
-  margin: 0;
 }
 .page-container {
   position: relative;
@@ -37,16 +35,17 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  
+
 } 
 .card-principal {
   max-width: 1000px;
   margin: auto; 
+  margin-top: 10%;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  top: 37%;
+  display:grid;
   color: black;
 } 
 
@@ -60,17 +59,6 @@ body {
 .card-text {
   padding-bottom: 20px;
   padding-top: 10px;
-}
-
-
-
-.footer {
-  background-color: #0e4166; /* Cambia el color de fondo del footer según tus preferencias. */
-  color: white; /* Cambia el color del texto del footer según tus preferencias. */
-  text-align: center;
-  padding: 10px; /* Añade espacio alrededor del contenido del footer. */
-  width: 100%;
-  height: 70px;
 }
 
 .btn-primary {

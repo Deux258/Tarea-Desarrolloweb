@@ -42,17 +42,34 @@
         </div>
     </div>
 
-    <footer class="py-3 my-4 border-top bg-light">
+    <footer class="py-3 border-top bg-light fixed-bottom">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
             <p class="mb-0 text-body-secondary">&copy; 2023 Flysheet, Inc</p>
             <ul class="nav justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Elecciones</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Ingresar Votaciones</a></li>
+                <li class="nav-item"><a href="../Pag principal/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="../Votaciones/Votaciones.html" class="nav-link px-2 text-body-secondary">Elecciones</a></li>
+                <li class="nav-item"><a href="../CrearVotacion/crearVotacion.html" class="nav-link px-2 text-body-secondary" >Crear votación</a></li>
                 <li class="nav-item"><a type="button" class="nav-link px-2 text-body-secondary" data-bs-toggle="modal" data-bs-target="#mi-modal">Acerca de</a></li>
             </ul>
         </div>
       </footer>
+
+      <div class="modal" id="mi-modal">  <!-- ACERCA DE -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                    <h1 class="modal-title fs-5">Acerca de</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-0">
+                    <p>¡Gracias por visitar nuestra página! este es un proyecto creado por Diego Muñoz y Alex Marambio, Universidad Diego Portales.</p>
+                </div>
+                <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                    <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>

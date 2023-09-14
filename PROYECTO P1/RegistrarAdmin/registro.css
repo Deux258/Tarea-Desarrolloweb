@@ -9,6 +9,8 @@ background-image: radial-gradient(circle at center center, #A7FF83, #086972), re
 .card-body {
     background-color: #e0ffd4;    
     opacity: 100%;
+    margin-top: 25%;
+
 }
 
 .form-signin {
