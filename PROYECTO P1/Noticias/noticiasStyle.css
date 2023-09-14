@@ -2,9 +2,9 @@
 {
     display: grid;
     place-items: center;
-    background-color: rgba(255, 255, 255, 0.692);
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #e5e5f7d0;
 }
 .titulo
 {
