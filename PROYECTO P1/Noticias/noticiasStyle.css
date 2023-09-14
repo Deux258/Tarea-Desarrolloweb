@@ -39,3 +39,23 @@
 .nav-item {
     padding: 3px;
 }
+
+
+.tarjetas
+{
+  width: 800px;
+  height: 400px;
+  background-color: aliceblue;
+  overflow: hidden;
+  padding: 0;
+  margin: 20px;
+}
+.tarjetas img
+{
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  padding: 0;
+  border: 0;
+  justify-content:left;
+}
