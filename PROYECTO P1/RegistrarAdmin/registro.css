@@ -1,15 +1,14 @@
 /* Estilos para el formulario de registro */
 body{
 background-color: #e5e5f7;
-/*opacity: 0.8;*/
 background-image: radial-gradient(circle at center center, #A7FF83, #086972), repeating-radial-gradient(circle at center center, #17B978, #17B978, 10px, transparent 20px, transparent 10px);
-/*background-blend-mode: multiply;*/
-
 }
 .card-body {
     background-color: #e0ffd4;    
     opacity: 100%;
     margin-top: 25%;
+}
+.logo-imagen {
 
 }
 
