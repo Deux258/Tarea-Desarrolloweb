@@ -1,0 +1,1 @@
+iniciar autorestart server: npm run start (en el terminal)
